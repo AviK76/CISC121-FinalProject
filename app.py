@@ -133,7 +133,7 @@ def format_event(event):
         lst = event[1]
         return " Merging:\n" + "\n".join([f"{s[0]} | {s[1]}" for s in lst])
 
-  def animate_sort(text_input, delay):
+def animate_sort(text_input, delay):
     """
     This is the actual "animation"
     This is what goes through all the steps and puts them together
