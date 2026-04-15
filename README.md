@@ -57,7 +57,7 @@ Screenshots:
 
 ## Author & AI Acknowledgment
 
-AI was used during this project. It was not used at all in any of the README, nor was it used the write the original merge sort function or the first draft of the project. It was used in the majority of the Gradio work, specifically in the animation, but all material was gone over by myself and editted + verified. 
+AI was used during this project. It was not used at all in any of the README, nor was it used the write the original merge sort function or the first draft of the project. I also wrote the function to add submissions without any Ai, as well as all the comments in the project, with AI only every being used to clarify sections, then written in my own words. It was used in the majority of the Gradio work, specifically in the animation, as well as the 'event' format which is the driving force of what is displayed, but all material was gone over by myself and editted + verified. 
 
 Sources: 
 https://www.youtube.com/watch?v=xqdTFyRdtjQ
