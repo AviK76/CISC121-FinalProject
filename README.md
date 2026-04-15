@@ -36,6 +36,8 @@ To use the organizer, simply input as many submissions as you wish in the valid 
 
 ## Hugging Face Link
 
+https://huggingface.co/spaces/Herbert43/CISC121-Project
+
 ## Testing
 
 There were several tests and edge cases ran:
@@ -45,6 +47,8 @@ There were several tests and edge cases ran:
    The function would also sort these properly, but once again, I didn't like it, so I added in another check in the validation function that excludes times in the future, and made sure to bring up different messages.
 3. Incorrect format (Ex. student1, 12:00)
    If a submission didn't include every single field, everything would crash, so I had to add in another validation that would exclude submissions that didn't fill in all the fields.
+4. Blank fields (Ex. , 2026-04-10 12:00, )
+  The final test was on blank fields. What I found was that as long as there was a valid time, things went ahead, which I think is a good outcome. I didn't make any changes, because there could be submissions with no files attached.
 
 Screenshots:
 
