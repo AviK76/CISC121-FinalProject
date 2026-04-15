@@ -11,6 +11,13 @@ This of course relies on the fact that the dataset is mutable, so submissions mu
 During the simulation, the user will see the dataset get divided into subsection. Then, as segments are sorted, the elements being compared will be highlighted, to indicate this. As sorted lists are merged, the same process will happen, with the top elements being highlighted as the new, merged list is created. When a new submissions are added, the entire process is repeated. 
 
 ## Demo video/gif/screenshot of test
+Sorry for how quick the GIF is, Github doesn't allow very big files.
+
+![Recording 2026-04-15 104311](https://github.com/user-attachments/assets/d172b5e2-5204-4201-a074-d1155fa5f7ba)
+
+
+<img width="2559" height="1331" alt="image" src="https://github.com/user-attachments/assets/50f4e3bf-703a-4e23-a6b2-8951a060159f" />
+
 
 ## Problem Breakdown & Computational Thinking
 
@@ -24,6 +31,30 @@ Each assignment will be a list made up of three strings: student_id, submitted_a
 
 ## Steps to Run
 
+In order to run this locally, simply run each cell. If you are a notebook, like google colab, the Gradio UI should appear directly below the last cell, along with a link that will open up the UI on it's own in your browser. If you are running it out of something like VSCode, a link should appear in the terminal.
+To use the organizer, simply input as many submissions as you wish in the valid format; student_id, submitted_at, file_name (An example is also provided inside the input box) and adjust the animation speed. Once you submit the assignments, the animation should appear in the output box, ending with the full, sorted list, with any invalid formats excluded.
+
 ## Hugging Face Link
 
+## Testing
+
+There were several tests and edge cases ran:
+1. Invalid times (Ex. 2026-99-99 99:99)
+  The function would still sort this as you might expect, with the numbers being sorted low to high, however, I didn't like this, so I decided to add in a function to check for times thatt can't exist and just exclude them from the sorting and final list if they were found.
+2. Times in the future (Ex. 2027-04-10 12:00)
+   The function would also sort these properly, but once again, I didn't like it, so I added in another check in the validation function that excludes times in the future, and made sure to bring up different messages.
+3. Incorrect format (Ex. student1, 12:00)
+   If a submission didn't include every single field, everything would crash, so I had to add in another validation that would exclude submissions that didn't fill in all the fields.
+
+Screenshots:
+
+<img width="2559" height="1331" alt="image" src="https://github.com/user-attachments/assets/06f4345c-8642-4d18-9068-73bbd192ee25" />
+
+
 ## Author & AI Acknowledgment
+
+AI was used during this project. It was not used at all in any of the README, nor was it used the write the original merge sort function or the first draft of the project. It was used in the majority of the Gradio work, specifically in the animation, but all material was gone over by myself and editted + verified. 
+
+Sources: 
+https://www.youtube.com/watch?v=xqdTFyRdtjQ
+https://www.gradio.app/guides/quickstart
